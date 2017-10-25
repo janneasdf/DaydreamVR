@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class SimpleTeleport : MonoBehaviour {
 
-    public GameObject targetPoint;
+    public Pointer pointer;
 
     void Start()
     {
-        targetPoint = GameObject.Find("target");
+
     }
 
-    public void ProcessGvrController()
+    public void Update()
     {
         if ( GvrControllerInput.ClickButtonDown )
         {
-            if (!targetPoint) return;
+            if (!pointer.target) return;
 
             // If the pointer currently has non-null target
             // move the Headset at a fixed height above Pointer's hit point.
-            Vector3 targetPosition = targetPoint.transform.position;
+            Vector3 targetPosition = pointer.hitPoint;
             Vector3 newTargetPosition = new Vector3(targetPosition.x, transform.position.y, targetPosition.z);
 
             transform.position = newTargetPosition;
