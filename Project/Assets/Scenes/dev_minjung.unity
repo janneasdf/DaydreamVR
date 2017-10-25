@@ -183,6 +183,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 301577158}
+  - component: {fileID: 301577159}
+  - component: {fileID: 301577160}
   m_Layer: 0
   m_Name: Headset
   m_TagString: Untagged
@@ -204,6 +206,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &301577159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 301577157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb494e3d76c0a394c8527a795de1b898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPoint: {fileID: 0}
+--- !u!114 &301577160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 301577157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd455b13230210d4e9fe849bb4e59c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &781904639
 GameObject:
   m_ObjectHideFlags: 0
