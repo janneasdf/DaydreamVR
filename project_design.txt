@@ -1,0 +1,23 @@
+How to make an album
+
+1. Create a new album
+  -. Information : title, date, creator
+
+
+2. Select photos from android gallery
+  -. import photos to unity app
+  -. user selects which photos to put in album
+      
+  
+3. Select theme
+  -. Background
+  -. Layout
+  
+ 
+
+
+
+
+* Advanced features
+-. Change theme, layout later whenever users want.
+-. Share : login with google, facebook, twitter account
