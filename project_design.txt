@@ -31,11 +31,13 @@ How to make an album
   -. Read the list of photo book
   -. Open it then you go into the virtual album space
   -. play background music, play the effects, and so on...
+  -. Drag photos
   
 
 * Advanced features
 -. Change theme, layout later whenever users want.
 -. Share : login with google, facebook, twitter account
+-. Viewer interaction
 
 
 Implementation
