@@ -10,14 +10,34 @@ How to make an album
       
   
 3. Select theme
-  -. Background
-  -. Layout
+  -. Background : my room, space, panorama picture, ... in some cylinder space
+  -. Layout : Book, Minority Report, Exhibition style,...
   
- 
+4. Arrange photos
+  -. Put photos in each empty spot
+  
+  
+5. Decorate it
+  -. Add effects : rain, snow, stars, ...
+  -. Add text or sound : type user's own message(like post-it or memo), background music, voice message, ...
+  
+  
+6. Save and Share
+  -. Save the album
+  -. Share it with friends and family
+  
 
-
-
+7. Open and read the photo book
+  -. Read the list of photo book
+  -. Open it then you go into the virtual album space
+  -. play background music, play the effects, and so on...
+  
 
 * Advanced features
 -. Change theme, layout later whenever users want.
 -. Share : login with google, facebook, twitter account
+
+
+Implementation
+
+-. 
