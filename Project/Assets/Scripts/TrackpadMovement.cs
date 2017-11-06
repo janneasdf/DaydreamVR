@@ -6,11 +6,11 @@ public class TrackpadMovement : MonoBehaviour {
 
     public float movementSpeed = 1.0f;
 
-    GameObject camera;
+    GameObject sceneCamera;
 
 	// Use this for initialization
 	void Start () {
-        camera = GameObject.FindWithTag("MainCamera");
+        sceneCamera = GameObject.FindWithTag("MainCamera");
 	}
 	
 	// Update is called once per frame
@@ -23,7 +23,7 @@ public class TrackpadMovement : MonoBehaviour {
 
             //inputDir = inputDir.normalized;
 
-            var fwd = camera.transform.forward;
+            var fwd = sceneCamera.transform.forward;
             fwd.y = 0;
             fwd = fwd.normalized;
             var hor = Vector3.ProjectOnPlane(fwd, Vector3.up).normalized;
