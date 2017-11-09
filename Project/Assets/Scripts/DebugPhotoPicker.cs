@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DebugPhotoPicker : MonoBehaviour {
+public class DebugPhotoPicker : PhotoPickerBase {
 
     [Tooltip("Object which we'll put the chosen image to.")]
     public GameObject photoHolder;
