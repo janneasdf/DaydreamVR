@@ -8,11 +8,19 @@ public class PhotoChooser : MonoBehaviour {
 
     public void OpenPhotoChooser()
     {
+        //var testStrings = new List<string>();
+        //testStrings.Add("test1");
+        //testStrings.Add("test2");
+        //Debug.Log("Test: " + string.Join(",", testStrings.ToArray()));
+
         Debug.Log("Opened photo chooser!");
         SetImage();
         Debug.Log("First path: " + GetAllGalleryImagePaths()[0]);
+        Debug.Log("Paths: " + string.Join(",", GetAllGalleryImagePaths().ToArray()));
+
     }
 
+    // This function was found Unity forums
     private List<string> GetAllGalleryImagePaths()
     {
         List<string> results = new List<string>();
@@ -60,14 +68,27 @@ public class PhotoChooser : MonoBehaviour {
         return results;
     }
 
-    [SerializeField]
-    private RawImage m_image;
+    //[SerializeField]
+    //private RawImage m_image;
+    //[SerializeField]
+    //private Text m_text;
+
+    public RawImage m_image;
+    public Text m_text;
 
     public void SetImage()
     {
+        m_text.text = "Getting paths... ";
         List<string> galleryImages = GetAllGalleryImagePaths();
-        Texture2D t = new Texture2D(2, 2);
-        (new WWW(galleryImages[0])).LoadImageIntoTexture(t);
+        var allPaths = string.Join(", ", galleryImages.ToArray());
+        //m_text.text = "Paths: " + allPaths;
+        m_text.text = "Paths: " + string.Join(",", galleryImages.ToArray()) + " Image count: " + galleryImages.Count;
+        if (galleryImages.Count == 0) return;
+
+        var t = new Texture2D(2, 2);
+        var random = new System.Random();
+        var imageToShow = galleryImages[random.Next(galleryImages.Count)];
+        (new WWW(imageToShow)).LoadImageIntoTexture(t);
         m_image.texture = t;
     }
     
