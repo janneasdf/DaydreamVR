@@ -15,12 +15,14 @@ public class PhotoPicker : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        var photoPaths = Utilities.GetAllGalleryImagePaths().GetRange(0, 6);
+        var maxGalleryCount = 30; // small amount just for debug
+        var photoPaths = Utilities.GetAllGalleryImagePaths();
+        photoPaths = photoPaths.GetRange(0, System.Math.Min(maxGalleryCount, photoPaths.Count));
         Debug.Log(string.Join(",", photoPaths.ToArray()));
         foreach (var path in photoPaths)
         {
-            var imageObject = Instantiate(uiImagePrefab) as GameObject;
-            imageObject.transform.SetParent(contentHolder.transform);
+            var imageObject = Instantiate(uiImagePrefab);
+            imageObject.transform.SetParent(contentHolder.transform, false);
             var image = imageObject.GetComponent<UnityEngine.UI.RawImage>();
             image.texture = Utilities.LoadImageAsTexture(path);
             Debug.Log("Set texture :" + path);

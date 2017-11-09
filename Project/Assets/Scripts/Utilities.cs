@@ -57,6 +57,11 @@ public class Utilities {
     {
         var texture = new Texture2D(2, 2);
         (new WWW(path)).LoadImageIntoTexture(texture);
+        // Make texture smaller
+        //var aspectRatio = texture.width / texture.height;
+        //var height = 10;
+        //var width = aspectRatio * height;
+        //texture.Resize(width, height);
         return texture;
     }
 }
