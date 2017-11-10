@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 306e1784c5ba38c4d96c23627e7cac6e
+timeCreated: 1510262387
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Barlow Condensed
+  fontNames:
+  - Barlow Condensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2448e88b2f003e04fb476e8262d822f8, type: 3}
+  - {fileID: 12800000, guid: 2185bffb957ed0540a2b67e56de2f875, type: 3}
+  - {fileID: 12800000, guid: 0fc54dbc8b042304ea5a2f1f2b70e5c2, type: 3}
+  - {fileID: 12800000, guid: 098cdd2e283286b47ac73722ffc9240d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

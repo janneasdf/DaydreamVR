@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.73023415, g: 0.788981, b: 0.8498583, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -631,56 +631,6 @@ MonoBehaviour:
   blockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!1001 &798608445
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4475462188018548, guid: bde32c435b031a0468e9f1a246e70caf, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -100
-      objectReference: {fileID: 0}
-    - target: {fileID: 4475462188018548, guid: bde32c435b031a0468e9f1a246e70caf, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4475462188018548, guid: bde32c435b031a0468e9f1a246e70caf, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -100
-      objectReference: {fileID: 0}
-    - target: {fileID: 4475462188018548, guid: bde32c435b031a0468e9f1a246e70caf, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4475462188018548, guid: bde32c435b031a0468e9f1a246e70caf, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4475462188018548, guid: bde32c435b031a0468e9f1a246e70caf, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4475462188018548, guid: bde32c435b031a0468e9f1a246e70caf, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4475462188018548, guid: bde32c435b031a0468e9f1a246e70caf, type: 2}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660343733501768, guid: bde32c435b031a0468e9f1a246e70caf, type: 2}
-      propertyPath: m_Name
-      value: SnowForestTerrain
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660343733501768, guid: bde32c435b031a0468e9f1a246e70caf, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: bde32c435b031a0468e9f1a246e70caf, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &863715929
 Prefab:
   m_ObjectHideFlags: 0
@@ -755,6 +705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_image: {fileID: 97773767}
+  m_text: {fileID: 0}
 --- !u!4 &891672500
 Transform:
   m_ObjectHideFlags: 0
@@ -958,7 +909,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1650726567
 GameObject:

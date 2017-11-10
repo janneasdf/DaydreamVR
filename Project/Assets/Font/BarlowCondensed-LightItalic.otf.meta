@@ -1,0 +1,38 @@
+fileFormatVersion: 2
+guid: eff50f3bea78b0b4c832157de4ec799f
+timeCreated: 1510262389
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Barlow Condensed
+  fontNames:
+  - Barlow Condensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 6207ef802a62d8d419749e6ac0b8cda9, type: 3}
+  - {fileID: 12800000, guid: cd17758212114034490083e1cedb07c9, type: 3}
+  - {fileID: 12800000, guid: d21455c3c69e5b641a2c3f5a01474525, type: 3}
+  - {fileID: 12800000, guid: 8e0babf3e8a19dd44b3afc91f578b6a2, type: 3}
+  - {fileID: 12800000, guid: 306e1784c5ba38c4d96c23627e7cac6e, type: 3}
+  - {fileID: 12800000, guid: 445e46b468f25424bacb29fc7cd67acc, type: 3}
+  - {fileID: 12800000, guid: ec748d1528a247c4caa1506fa6daf9b9, type: 3}
+  - {fileID: 12800000, guid: af892b262e112304da6e2d95f1ea26bd, type: 3}
+  - {fileID: 12800000, guid: 72da1727d8d131343b5b5f14ef6962e4, type: 3}
+  - {fileID: 12800000, guid: 7b0356d93ec0ac443b8152ec37e91a0e, type: 3}
+  - {fileID: 12800000, guid: c26d265adc6ee1e458ddba57ad498602, type: 3}
+  - {fileID: 12800000, guid: e2aaa6ea1196925468033040238a0628, type: 3}
+  - {fileID: 12800000, guid: 6ad8224bd61bf8a49ade1fd1bef69d8f, type: 3}
+  - {fileID: 12800000, guid: 2448e88b2f003e04fb476e8262d822f8, type: 3}
+  - {fileID: 12800000, guid: 2185bffb957ed0540a2b67e56de2f875, type: 3}
+  - {fileID: 12800000, guid: 0fc54dbc8b042304ea5a2f1f2b70e5c2, type: 3}
+  - {fileID: 12800000, guid: 098cdd2e283286b47ac73722ffc9240d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
