@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OpenPhotoPicker : PhotoPickerBase {
+public class OpenPhotoPicker : MonoBehaviour {
 
     public void Open()
     {

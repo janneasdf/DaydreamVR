@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 222462404923040254}
   - component: {fileID: 114001970150683280}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: PhotoScrollView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +45,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1227695431375064
 GameObject:
   m_ObjectHideFlags: 1
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 114757535622831500}
   - component: {fileID: 114265530675105446}
   m_Layer: 5
-  m_Name: Button
+  m_Name: CancelButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -212,7 +212,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114757535622831500}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114895387110144164}
+        m_MethodName: Close
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114675945849457042
@@ -322,6 +333,8 @@ MonoBehaviour:
   photoHolder: {fileID: 0}
   contentHolder: {fileID: 1227695431375064}
   uiImagePrefab: {fileID: 1940012025754690, guid: dc22b4f046824de46ad4723b8d0390ef,
+    type: 2}
+  scenePhotoPrefab: {fileID: 1443622688134280, guid: 5aab4df6e1a0a4e4e847af53ebe58a04,
     type: 2}
   debugImages:
   - {fileID: 2800000, guid: f599e8d3ed511604a9b329c0d71ff23e, type: 3}

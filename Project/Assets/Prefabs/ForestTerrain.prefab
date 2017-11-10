@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 218975911727163602}
   - component: {fileID: 154625146879011400}
   m_Layer: 0
-  m_Name: ForestTerrain 1
+  m_Name: ForestTerrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
