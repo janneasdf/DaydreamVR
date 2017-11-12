@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224454219834389678}
   - component: {fileID: 114780569645905564}
+  - component: {fileID: 114747959029322560}
   m_Layer: 5
   m_Name: PhotoHolder
   m_TagString: Untagged
@@ -56,7 +57,7 @@ GameObject:
   - component: {fileID: 222482348239373182}
   - component: {fileID: 114678911012062596}
   m_Layer: 5
-  m_Name: Text
+  m_Name: AddPhotoText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -146,7 +147,20 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: +
+  m_Text: 'Click to
+
+    Add Photo'
+--- !u!114 &114747959029322560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1065412724765168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 843f989d5711bea459eecc9f07beecd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114780569645905564
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -223,7 +237,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1065412724765168}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 200}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224326562985629094}
@@ -233,7 +247,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 200}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224628227669265974
 RectTransform:

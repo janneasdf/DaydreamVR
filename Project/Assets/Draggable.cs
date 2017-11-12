@@ -33,6 +33,7 @@ public class Draggable : MonoBehaviour {
                     break;
                 }
             }
+            print("Results: " + results.Count);
             if (dropTargetHit.HasValue)
             {
                 print("Hit: " + dropTargetHit.Value.gameObject.name);

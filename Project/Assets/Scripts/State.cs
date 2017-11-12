@@ -6,5 +6,78 @@ public class State : MonoBehaviour {
     [Tooltip("For easy access to photo picker, even if it is inactive. ")]
     public GameObject PhotoPicker;
 
+    [Tooltip("Prefab for an empty room. ")]
+    public GameObject EmptyRoomPrefab;
 
+    public void SetTerrain(GameObject terrainOrNull)
+    {
+        SetEnvironmentThing("TerrainParent", terrainOrNull);
+    }
+
+    public void SetEffect(GameObject effectOrNull)
+    {
+        SetEnvironmentThing("EffectParent", effectOrNull);
+
+    }
+
+    public void SetBackground(GameObject backgroundOrNull)
+    {
+        SetEnvironmentThing("BackgroundParent", backgroundOrNull);
+    }
+
+    private void SetEnvironmentThing(string parentName, GameObject thing)
+    {
+        var currentRoom = GetCurrentRoom();
+        var thingParentTransform = currentRoom.transform.Find("Environment").Find(parentName);
+        while (thingParentTransform.childCount > 0)
+        {
+            Destroy(thingParentTransform.GetChild(0).gameObject);
+        }
+        thing.transform.SetParent(thing.transform, true);
+    }
+    
+    // Returns first room object that is not inactive
+    private GameObject GetCurrentRoom()
+    {
+        var rooms = GameObject.Find("Rooms");
+        foreach (Transform roomTransform in rooms.transform)
+        {
+            var room = roomTransform.gameObject;
+            if (room.activeSelf) return room;
+        }
+        print("Error: Current room could not be found. ");
+        return null;
+    }
+
+    public void GoToNextRoom() { GoToRoom(1); }
+
+    public void GoToPreviousRoom() { GoToRoom(-1); }
+
+    // Goes to room with index of current room index + offset (such as -1 or +1)
+    private void GoToRoom(int offset)
+    {
+        var currentRoom = GetCurrentRoom();
+        var roomIndex = currentRoom.transform.GetSiblingIndex() + offset;
+        var roomsTransform = currentRoom.transform.parent;
+        // Check that the room is not out of bounds
+        if (roomIndex >= 0)
+        {
+            // Create new room if necessary
+            if (roomIndex == roomsTransform.childCount)
+            {
+                var newRoom = Instantiate(EmptyRoomPrefab);
+                newRoom.transform.SetParent(roomsTransform, true);
+            }
+
+            // Set all rooms inactive
+            foreach (Transform room in roomsTransform) { room.gameObject.SetActive(false); }
+
+            // Set the new room active
+            roomsTransform.GetChild(roomIndex).gameObject.SetActive(true);
+        }
+        else
+        {
+            print("Error: room " + roomIndex + " is out of bounds. ");
+        }
+    }
 }
