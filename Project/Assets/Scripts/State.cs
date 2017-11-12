@@ -67,6 +67,11 @@ public class State : MonoBehaviour {
             {
                 var newRoom = Instantiate(EmptyRoomPrefab);
                 newRoom.transform.SetParent(roomsTransform, true);
+
+                // Hack: set the picker and empty room prefab
+                var newState = newRoom.gameObject.GetComponentInChildren<State>();
+                newState.EmptyRoomPrefab = EmptyRoomPrefab;
+                newState.PhotoPicker = PhotoPicker;
             }
 
             // Set all rooms inactive
