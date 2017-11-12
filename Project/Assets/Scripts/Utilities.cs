@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class Utilities {
 
+    public static State GetState()
+    {
+        return GameObject.Find("Logic").GetComponent<State>();
+    }
+
     // Found on Unity forums
     public static List<string> GetAllGalleryImagePaths()
     {
