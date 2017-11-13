@@ -501,7 +501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PhotoPicker: {fileID: 427142558}
-  StickerPicker: {fileID: 0}
+  StickerPicker: {fileID: 461404440}
   EmptyRoomPrefab: {fileID: 1637452916353130, guid: 9926e13e0c3178541b04f31b39cbcc4a,
     type: 2}
 --- !u!114 &125837305
@@ -2383,6 +2383,11 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 459205482}
+--- !u!1 &461404440 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1474030822355300, guid: d1e16807fea7b3e4aad6fef8035e7f8f,
+    type: 2}
+  m_PrefabInternal: {fileID: 2042830463}
 --- !u!1 &464220200
 GameObject:
   m_ObjectHideFlags: 0
@@ -5337,6 +5342,7 @@ GameObject:
   - component: {fileID: 1597176979}
   - component: {fileID: 1597176978}
   - component: {fileID: 1597176977}
+  - component: {fileID: 1597176980}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -5401,7 +5407,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1597176978}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1597176980}
+        m_MethodName: Open
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1597176978
@@ -5437,6 +5454,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1597176975}
+--- !u!114 &1597176980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1597176975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7de63bf02c912934f9501fa771397466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1648944209
 GameObject:
   m_ObjectHideFlags: 0
@@ -6835,6 +6863,11 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224893564591095920, guid: d1e16807fea7b3e4aad6fef8035e7f8f,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d1e16807fea7b3e4aad6fef8035e7f8f, type: 2}
