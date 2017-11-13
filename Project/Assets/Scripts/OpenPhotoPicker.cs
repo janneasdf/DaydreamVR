@@ -20,5 +20,9 @@ public class OpenPhotoPicker : MonoBehaviour {
 
         // Set picker active in case it was inactive
         photoPicker.SetActive(true);
+
+        // Hack...
+        var pos = photoPicker.transform.localPosition;
+        photoPicker.transform.localPosition = new Vector3(pos.x, 200, pos.z);
     }
 }

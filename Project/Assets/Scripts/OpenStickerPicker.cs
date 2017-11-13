@@ -11,7 +11,6 @@ public class OpenStickerPicker : MonoBehaviour {
         photoPicker.transform.SetParent(transform, false);
         photoPicker.transform.SetAsLastSibling();
         transform.SetAsLastSibling();
-        photoPicker.transform.localPosition = photoPicker.transform.localPosition + 50.0f * Vector3.up;
 
         // Set the photo holder that will display the picked photo
         //var pickerComponent = photoPicker.GetComponent<PhotoPicker>();
@@ -21,5 +20,6 @@ public class OpenStickerPicker : MonoBehaviour {
 
         // Set picker active in case it was inactive
         photoPicker.SetActive(true);
+        photoPicker.transform.localPosition = photoPicker.transform.localPosition + 50.0f * Vector3.up;
     }
 }
