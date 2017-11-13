@@ -5,12 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/TerrainTest.unity
-    guid: bc31e8061e4fe394cb46a46870342684
-  - enabled: 0
-    path: Assets/Scenes/snowy_test.unity
-    guid: 10d27db23131daa4baf3f1fa47ad9ea4
   - enabled: 1
-    path: Assets/Scenes/jannetest 1.unity
-    guid: 72bf7ee0bac905842817dd417ac324ba
+    path: Assets/Scenes/jannetest.unity
+    guid: a095366c690a5374aa12354e13fc42be
+  - enabled: 1
+    path: Assets/Scenes/main_menu.unity
+    guid: 00bc7726fef059347a34d7f26c193837
