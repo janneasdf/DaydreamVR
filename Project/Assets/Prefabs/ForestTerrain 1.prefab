@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4912819692093370}
   - component: {fileID: 218712447672371988}
   - component: {fileID: 154368928270825332}
+  - component: {fileID: 114944117040310654}
   m_Layer: 0
   m_Name: ForestTerrain 1
   m_TagString: Untagged
@@ -41,6 +42,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114944117040310654
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1499493061081800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cc92a2553a696d44b3091dbf3b2c72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSky: {fileID: 2100000, guid: 71f14a2d79f732f4d9893ef1b911f4ff, type: 2}
 --- !u!154 &154368928270825332
 TerrainCollider:
   m_ObjectHideFlags: 1
