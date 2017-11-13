@@ -6,6 +6,9 @@ public class State : MonoBehaviour {
     [Tooltip("For easy access to photo picker, even if it is inactive. ")]
     public GameObject PhotoPicker;
 
+    [Tooltip("For easy access to sticker picker, even if it is inactive. ")]
+    public GameObject StickerPicker;
+
     [Tooltip("Prefab for an empty room. ")]
     public GameObject EmptyRoomPrefab;
 
@@ -29,11 +32,26 @@ public class State : MonoBehaviour {
     {
         var currentRoom = GetCurrentRoom();
         var thingParentTransform = currentRoom.transform.Find("Environment").Find(parentName);
-        while (thingParentTransform.childCount > 0)
+
+        var thingPrefab = thing;
+        foreach (Transform child in thingParentTransform)
         {
-            Destroy(thingParentTransform.GetChild(0).gameObject);
+            Destroy(child.gameObject);
         }
-        thing.transform.SetParent(thing.transform, true);
+        if (thingPrefab != null)
+        {
+            var newThing = Instantiate(thingPrefab);
+            newThing.transform.SetParent(thingParentTransform, true);
+        }
+
+        //foreach (Transform existingThing in thingParentTransform)
+        //{
+        //    existingThing.gameObject.SetActive(false);
+        //}
+        //if (thing != null)
+        //{
+        //    thing.SetActive(true);
+        //}
     }
     
     // Returns first room object that is not inactive

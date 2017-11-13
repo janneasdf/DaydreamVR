@@ -141,7 +141,7 @@ PlayerSettings:
   targetPixelDensity: 30
   resolutionScalingMode: 0
   applicationIdentifier:
-    Android: co1.Co1pany.Project
+    Android: com.JanneMinjung.MyMemories
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 24
