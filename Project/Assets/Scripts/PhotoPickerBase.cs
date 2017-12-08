@@ -29,7 +29,7 @@ public class PhotoPickerBase : MonoBehaviour {
 
         // Set button click callback
         var button = imageObject.GetComponent<Button>();
-        button.onClick.AddListener(() => { PickPhoto(image); });
+        button.onClick.AddListener(() => { PickPhoto(texture); });
     }
 
     // Close the photo picker (by setting it inactive)
@@ -39,13 +39,13 @@ public class PhotoPickerBase : MonoBehaviour {
     }
 
     // Called by gallery photo
-    public void PickPhoto(RawImage pickedImage)
+    public void PickPhoto(Texture pickedImageTexture)
     {
         // Instantiate image object on top of photoHolder
         var scenePhoto = Instantiate(scenePhotoPrefab);
         scenePhoto.transform.SetParent(photoHolder.transform, false);
-        var targetImage = scenePhotoPrefab.GetComponent<RawImage>();
-        targetImage.texture = pickedImage.texture;
+        var targetImage = scenePhoto.GetComponent<RawImage>();
+        targetImage.texture = pickedImageTexture;
 
         // Close photo picker
         Close();
